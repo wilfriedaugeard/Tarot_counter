@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-123dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="146dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Informations"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cardview_dark_background"
+                android:typeface="normal"
+                app:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:text="Choisir une team"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:typeface="normal"
+                app:fontFamily="serif" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="212dp"
+                android:layout_height="61dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Attaquants" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Defenseurs" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Choisir un contrat"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:typeface="normal"
+                app:fontFamily="serif" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Petite" />
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garde" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garde sans" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garde contre" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="Indiquez le nombre de cartes"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:typeface="normal"
+                app:fontFamily="serif" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Bouts"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Rois"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Dames"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Cavaliers"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Valets"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Restes"
+                android:inputType="numberSigned"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petit au bout" />
+
+            <Button
+                android:id="@+id/next_button_get_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="Compter les points" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
